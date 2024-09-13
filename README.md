@@ -44,5 +44,5 @@ We welcome contributions to this plugin! Feel free to report bugs or suggest imp
 Get Involved:
 
 
-Learn more about web accessibility at the Web Accessibility Initiative (WAI).
-Find resources and tools for creating accessible websites at WordPress
+Learn more about web accessibility at the [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
+Find resources and tools for creating accessible websites at [WordPress Accessibility](https://wordpress.org/plugins/accessibility/)
