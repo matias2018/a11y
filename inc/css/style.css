@@ -1,0 +1,200 @@
+.a11y-banner #settingsDialog {
+  min-width: 35%;
+  margin-bottom: 55px;
+}
+
+.a11y-banner .form-switch .form-check-input {
+  margin-left: -2em;
+}
+
+.a11y-banner .modal-title {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: var(--title-color);
+}
+
+.a11y-banner #btn-cls {
+  transition: 0.3s;
+}
+
+.a11y-banner #btn-cls:hover {
+  filter:hue-rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.a11y-banner #settingsContent.modal-content {
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 20px;
+}
+
+.a11y-banner div#settingsContent.modal-content, 
+.a11y-banner div#settingsContent.modal-content * {
+  font-size: 16px !important;
+  letter-spacing: 1px;
+}
+
+@media screen and (min-device-width: 700px) {
+  .a11y-banner #modalContent {
+    width: 120%;
+  } 
+  .a11y-banner .form-choices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+.a11y-banner #modalContent {
+  width: 100%;
+} 
+
+.a11y-banner .modal-title {
+  font-size: 20px;
+}
+
+header.header-scrolled.highContrast {
+  background: black !important;
+  color: white !important;
+}
+
+
+.highContrast p,
+.highContrast h1,
+.highContrast h1 *,
+.highContrast h2,
+.highContrast h2 *,
+.highContrast h3,
+.highContrast h4,
+.highContrast h5,
+.highContrast h6,
+.highContrast span,
+.highContrast small,
+.highContrast input {
+  /* High contrast styles */
+  filter: hue-rotate(180deg) !important;
+}
+
+body.darkMode {
+  background: black;
+  color: white;
+}
+.darkMode *:not(#features):not(.modal):not(.modal-body):not(.modal-content):not(.modal-content *):not(.about .video-box):not(.a11y),
+.darkMode .team .member .member-info,
+section.darkMode *,
+.darkMode #hero::before {
+  background: black;
+  color: white !important;
+}
+
+
+.darkMode .faq *,
+.darkMode .modal-dialog,
+.darkMode .modal-dialog *:not(.form-switch>input),
+.darkMode .form-check-label,
+.darkMode i.keepStyle
+{
+  background: #fff;
+  color: black !important;
+}
+
+.darkMode section#faq,
+.darkMode section#faq *,
+.darkMode section#contact,
+.darkMode section#contact *,
+.darkMode footer#footer,
+.darkMode footer#footer div.footer-info {
+  background: #000;
+  color: #fff !important;
+}
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.highContrast [data-bs-backdrop="static"] {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.highContrast .modal-dialog .modal-content .modal-header[data-bs-dismiss="modal"] {
+  opacity: 1;
+}
+
+body.highContrast #openSettings {
+  filter: invert(1);
+}
+
+
+/* Light mode || Dark mode */
+@media (prefers-color-scheme: light) {
+  body.devicePrefs * {
+      background-color: white;
+      color: black;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body.devicePrefs * {
+      background: black !important;
+      color: white !important;
+  }
+
+}
+
+.reduceMotion {
+  transition: none !important;
+}
+
+@media (prefers-reduced-motion) {
+  .a11y-banner #settingsDialog {
+    transition: none;
+  }
+
+}
+
+.hidden-true {
+  visibility: hidden;
+}
+.zIndex-2 {
+  z-index: 2;
+}
+
+.a11y {
+  content: '';
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: url("../assets/img/a11y.png") center center no-repeat;
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+  z-index: 99999;
+}
+
+.font-size-button:hover {
+  background: #0d6efd;
+  color: white;
+}
+.font-size-button {
+  font-size: 1.5rem;
+  border-radius: 50%;
+  border: 2px solid #0d6efd;
+  color: #0d6efd;
+  width: 50px;
+  height: 50px;
+}
+
+button#increaseFontSize.font-size-button {
+  font-size: 24px;
+}
+button#decreaseFontSize.font-size-button {
+  font-size: 12px;
+}
