@@ -198,3 +198,7 @@ button#increaseFontSize.font-size-button {
 button#decreaseFontSize.font-size-button {
   font-size: 12px;
 }
+
+.display_none {
+  display: none !important;
+}

@@ -87,6 +87,8 @@ if (useReducedMotion === 'true') {
   toggleClassOnAllElements('reduceMotion');
   useReducedMotionBtn.checked = true;
   toggleAnimation(false);
+  // This is a temporary fix for the waves animation
+  select('.hero-waves').classList.toggle('hidden-true');
 }
 
 // Event listener

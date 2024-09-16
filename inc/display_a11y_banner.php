@@ -73,7 +73,7 @@ function display_a11y_banner()
                     </div>
                   </div>
                   <hr>
-                  <div class="row">
+                  <div class="row display_none">
                     <div class="col-8">
                       <label class="form-check-label" for="AnimationToggle">Animações</label>
                     </div>
@@ -81,8 +81,8 @@ function display_a11y_banner()
                       <input class="form-check-input useAnimation" type="checkbox" role="switch" id="AnimationToggle"
                         checked>
                     </div>
+                    <hr>
                   </div>
-                  <hr>
                   <div class="d-flex flex-row justify-content-between align-items-center">
                     <div>
                       <button id="decreaseFontSize" class="font-size-button" style="font-size: 12px !important;">A</button>
