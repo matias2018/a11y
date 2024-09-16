@@ -86,6 +86,7 @@ function toggleDevicePreferences() {
 if (useReducedMotion === 'true') {
   toggleClassOnAllElements('reduceMotion');
   useReducedMotionBtn.checked = true;
+  toggleAnimation(false);
 }
 
 // Event listener
@@ -94,6 +95,8 @@ useReducedMotionBtn.addEventListener('click', toggleReducedMotion);
 function toggleReducedMotion() {
   const useReducedMotion = !document.body.classList.contains('reduceMotion');
   document.body.classList.toggle('reduceMotion');
+
+  toggleAnimation(!useReducedMotion);
 
   localStorage.setItem('useReducedMotion', useReducedMotion.toString());
 }
@@ -104,20 +107,23 @@ function toggleReducedMotion() {
 if (useAnimation === 'true') {
   document.body.classList.add('useAnimation');
   useAnimationBtn.checked = true;
+} else {
+  toggleAnimation(true);
+  useAnimationBtn.checked = false;
 }
 // Event listener
 useAnimationBtn.addEventListener('click', toggleAnimation);
 
 // use animations
-function toggleAnimation() {
+function toggleAnimation(disable = false) {
   const useAnimation = !document.body.classList.contains('useAnimation');
-  document.body.classList.toggle('useAnimation');
+  // document.body.classList.toggle('useAnimation');
 
   localStorage.setItem('useAnimation', useAnimation.toString());
 
-  toggleClassOnAllElements(useAnimation);
+  toggleClassOnAllElements('useAnimation');
   AOS.init({
-    disable: true
+    disable: disable,
   });
   select('.hero-waves').classList.toggle('hidden-true');
   select('.animated').classList.toggle('paused');
