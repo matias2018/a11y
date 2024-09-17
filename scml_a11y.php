@@ -4,7 +4,7 @@ namespace SCML\A11Y;
  * Plugin Name: SCML A11Y Plugin
  * Plugin URI: https://santacasa.sharepoint.com/:u:/s/NDD-LYB/EQRPPiEMCYlCiRMhSQgInT4BU7trBch2QwS-A8ccxiWZVA?email=pedro.n.matias%40scml.pt&e=AdcYpn
  * Description: This is a plugin to manage accessibility issues.
- * Version: 0.2.2
+ * Version: 0.3.0
  * Requires at least: 5.2
  * Requires PHP:      7.2
  * Author: Pedro Matias @ UACOR SCML
