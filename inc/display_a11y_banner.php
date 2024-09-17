@@ -32,7 +32,7 @@ function display_a11y_banner()
                 </a>
               </div>
 
-              <div id="modalBody" class="modal-body">
+              <div id="modala11yBody" class="modal-body">
                 <div class="container-fuild">
                   <div class="row">
                     <div class="col-8">
