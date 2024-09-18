@@ -9,7 +9,6 @@ const useReducedMotionBtn = select('.useReducedMotion');
 const useDarkModeBtn = select('.useDarkMode');
 const highContrastBtn = select('.useHighContrast');
 const useAnimationBtn = select('.useAnimation');
-const useDevicePreferencesBtn = select('.useDevicePreferences');
 const decreaseFontBtn = select('#decreaseFontSize');
 const increaseFontBtn = select('#increaseFontSize');
 
@@ -22,7 +21,6 @@ function toggleClassOnAllElements(className) {
 const useReducedMotion = localStorage.getItem('useReducedMotion');
 const useDarkMode = localStorage.getItem('useDarkMode');
 const useHighContrast = localStorage.getItem('useHighContrast');
-const useDevicePreferences = localStorage.getItem('useDevicePreferences');
 const useAnimation = localStorage.getItem('useAnimation');
 
 // DARK MODE
@@ -63,22 +61,6 @@ function toggleHighContrast() {
   // Store the current state in localStorage
   const isHighContrast = document.body.classList.contains('highContrast');
   localStorage.setItem('useHighContrast', isHighContrast.toString());
-}
-
-// DEVICE PREFERENCES
-// check if the user has set a preference for device preferences
-if (useDevicePreferences === 'true') {
-  document.body.classList.add('devicePreferences');
-  useDevicePreferencesBtn.checked = true;
-}
-// Event listener
-useDevicePreferencesBtn.addEventListener('click', toggleDevicePreferences);
-// use device preferences
-function toggleDevicePreferences() {
-  const useDevicePreferences = !document.body.classList.contains('devicePreferences');
-  document.body.classList.toggle('devicePreferences');
-
-  localStorage.setItem('useDevicePreferences', useDevicePreferences.toString());
 }
 
 // REDUCED MOTION

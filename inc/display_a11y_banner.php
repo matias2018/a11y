@@ -54,17 +54,6 @@ function display_a11y_banner()
                   <hr>
                   <div class="row">
                     <div class="col-8">
-                      <label class="form-check-label" for="useDevicePreferences">Usar preferências do
-                        Dispositivo</label>
-                    </div>
-                    <div class="form-check form-switch col-md-1 ms-auto">
-                      <input class="form-check-input useDevicePreferences" type="checkbox" role="switch"
-                        id="useDevicePreferences">
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="row">
-                    <div class="col-8">
                       <label class="form-check-label" for="useHighContrast">Alto Contraste</label>
                     </div>
                     <div class="form-check form-switch col-md-1 ms-auto">
