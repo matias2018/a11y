@@ -13,10 +13,12 @@ function display_a11y_banner()
         <div id="settings" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="settingsTitle" aria-hidden="true"
           data-bs-backdrop="static">
           <div id="settingsDialog" class="modal-dialog position-fixed end-0 bottom-0" role="document">
-
             <div id="settingsContent" class="modal-content">
+              <div class="modalTitle">
+                <h1 class="modal-title">WP-A11Y</h1>
+              </div>
               <div id="settingsHeader" class="modal-header">
-                <p class="modal-title" id="settingsTitle">Configurações de Acessibilidade</p>
+                <p class="modal-title" id="settingsTitle">Accessibility settings</p>
                 <a type="button" id="btn-cls" class="saveAndClose" data-bs-dismiss="modal" aria-label="Close">
                   <svg fill="#74bebd" height="20px" width="20px" version="1.1" id="Capa_1"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490"
@@ -36,7 +38,7 @@ function display_a11y_banner()
                 <div class="container-fuild">
                   <div class="row">
                     <div class="col-8">
-                      <label class="form-check-label" for="useReducedMotion">Usar Reduced Motion</label>
+                      <label class="form-check-label" for="useReducedMotion">Use Reduced Motion</label>
                     </div>
                     <div class="form-check form-switch col-md-1 ms-auto">
                       <input class="form-check-input useReducedMotion" type="checkbox" role="switch" id="useReducedMotion">
@@ -45,7 +47,7 @@ function display_a11y_banner()
                   <hr>
                   <div class="row">
                     <div class="col-8">
-                      <label class="form-check-label" for="useDarkMode">Usar Dark Mode</label>
+                      <label class="form-check-label" for="useDarkMode">Use Dark Mode</label>
                     </div>
                     <div class="form-check form-switch col-md-1 ms-auto">
                       <input class="form-check-input useDarkMode" type="checkbox" role="switch" id="useDarkMode">
@@ -54,7 +56,7 @@ function display_a11y_banner()
                   <hr>
                   <div class="row">
                     <div class="col-8">
-                      <label class="form-check-label" for="useHighContrast">Alto Contraste</label>
+                      <label class="form-check-label" for="useHighContrast">High Contrast</label>
                     </div>
                     <div class="form-check form-switch col-md-1 ms-auto">
                       <input class="form-check-input useHighContrast" type="checkbox" role="switch"
@@ -64,7 +66,7 @@ function display_a11y_banner()
                   <hr>
                   <div class="row display_none">
                     <div class="col-8">
-                      <label class="form-check-label" for="AnimationToggle">Animações</label>
+                      <label class="form-check-label" for="AnimationToggle">Animations</label>
                     </div>
                     <div class="form-check form-switch col-md-1 ms-auto">
                       <input class="form-check-input useAnimation" type="checkbox" role="switch" id="AnimationToggle"
@@ -75,12 +77,16 @@ function display_a11y_banner()
                   <div class="d-flex flex-row justify-content-between align-items-center">
                     <div>
                       <button id="decreaseFontSize" class="font-size-button" style="font-size: 12px !important;">A</button>
+                      <br>
+                      <small style="font-size: 10px !important;">Decrease</small><br>
                     </div>
                     <div>
-                      <label for="fontSize">Tamanho da Fonte</label>
+                      <label for="fontSize">Font Size</label>
                     </div>
                     <div>
                       <button id="increaseFontSize" class="font-size-button" style="font-size: 24px !important;">A</button>
+                      <br>
+                      <small style="font-size: 10px !important;">Increase</small><br>
                     </div>
                   </div>
                 </div>

@@ -1,8 +1,8 @@
 <?php
 namespace SCML\A11Y;
 /**
- * Plugin Name: SCML A11Y Plugin
- * Plugin URI: https://santacasa.sharepoint.com/:u:/s/NDD-LYB/EQRPPiEMCYlCiRMhSQgInT4BU7trBch2QwS-A8ccxiWZVA?email=pedro.n.matias%40scml.pt&e=AdcYpn
+ * Plugin Name: WP-A11Y Plugin
+ * Plugin URI: https://github.com/matias2018/a11y
  * Description: This is a plugin to manage accessibility issues.
  * Version: 0.3.0
  * Requires at least: 5.2
@@ -16,8 +16,8 @@ namespace SCML\A11Y;
  */
 
 /* !!! comment in production !!! */
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+// error_reporting(E_ALL);
+// ini_set('display_errors', 1);
 
 // If this file is called directly, abort.
 if (!defined('WPINC')) {

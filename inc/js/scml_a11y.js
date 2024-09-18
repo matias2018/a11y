@@ -113,6 +113,46 @@ function toggleAnimation(disable = false) {
   select('.animated').classList.toggle('paused');
 }
 
+function disableAllAnimations() {
+  const elements = document.querySelectorAll('*');
+  elements.forEach((element) => {
+    element.style.animation = 'none';
+    element.style.transition = 'none';
+  });
+
+  const animationLibraries = [
+    {name: 'anime.js', selector: '[data-animejs]',},
+    {name: 'AOS', selector: '[data-aos]',},
+    {name: 'lottie', selector: '[data-lottie]',},
+    {name: 'ScrollReveal', selector: '[data-scroll-reveal]',},
+    {name: 'Three.js', selector: '[data-threejs]',},
+    {name: 'GSAP', selector: '[data-gsap]',},
+    {name: 'Velocity.js', selector: '[data-velocity]',},
+  ];
+
+  animationLibraries.forEach((lib) => {
+    const elements = document.querySelectorAll(lib.selector);
+    if (elements.length > 0) {
+      if (lib.name === 'anime.js'){
+        anime.pause();
+      } else if (lib.name === 'GSAP') {
+        gsap.pauseAll();
+      } else if (lib.name === 'lottie') {
+        lottie.pause();
+      } else if (lib.name === 'ScrollReveal') {
+        ScrollReveal().destroy();
+      } else if (lib.name === 'Three.js') {
+        // three.js
+        // three.js animations are handled by the render loop
+        clock.stop();
+      } else if (lib.name === 'Velocity.js') {
+        // Velocity.js
+        Velocity.Utilities.removeData(elements);
+      }
+    }
+  });
+}
+
 // FONT SIZE
 // adjust font size; Will not store the font size in localStorage
 const body = document.body;
