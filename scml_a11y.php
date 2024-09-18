@@ -4,7 +4,7 @@ namespace SCML\A11Y;
  * Plugin Name: WP-A11Y Plugin
  * Plugin URI: https://github.com/matias2018/a11y
  * Description: This is a plugin to manage accessibility issues.
- * Version: 0.3.0
+ * Version: 1.0.0
  * Requires at least: 5.2
  * Requires PHP:      7.2
  * Author: Pedro Matias @ UACOR SCML
