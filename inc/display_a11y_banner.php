@@ -4,9 +4,9 @@
 function display_a11y_banner()
 {
   if (isset($_SERVER['REQUEST_URI'])) {
-    $unslashed_url = wp_unslash($_SERVER['REQUEST_URI']);
-    $current_url = esc_url($unslashed_url);
-    if (!is_admin() && !strstr($current_url, 'wp-login.php')) { ?>
+    $unslashed_uri = wp_unslash($_SERVER['REQUEST_URI']);
+    $current_uri = esc_url($unslashed_uri);
+    if (!is_admin() && !strstr($current_uri, 'wp-login.php')) { ?>
       <a id="openSettings" href="#" class="a11y" data-bs-toggle="modal" data-bs-target="#settings">
         <span class="sr-only">Acessibilidade</span>
       </a>
