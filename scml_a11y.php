@@ -1,7 +1,7 @@
 <?php
 namespace SCML\A11Y;
 /**
- * Plugin Name: WP-A11Y Plugin
+ * Plugin Name: WPA11Y Accessibility Tool
  * Plugin URI: https://github.com/matias2018/a11y
  * Description: This is a plugin to manage accessibility issues.
  * Version: 1.0.0
@@ -11,7 +11,7 @@ namespace SCML\A11Y;
  * Author URI: https://pedromatias.dev
  * License: GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       scml-a11y
+ * Text Domain:       scml_a11y
  * Domain Path:       /languages/
  */
 

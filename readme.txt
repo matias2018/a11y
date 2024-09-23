@@ -5,7 +5,7 @@ Donate link: http://pedromatias.dev
 Requires at least: 6.0
 Tested up to: 6.6.2
 Requires PHP: 7.4
-Stable tag: 1.0
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,9 +21,8 @@ markdown parsed.
 Features:
 
 1. Wider Audience: Reach a bigger target target market and make your internet site available to everyone.
-2. Improved SEO: Accessibility elements play a position in seek engine optimization.
-3. Enhanced User Experience: Create a greater high-quality revel in for all visitors.
-4. Legal Compliance: Many areas have policies requiring web sites to be available.
+2. Enhanced User Experience: Create a greater high-quality revel in for all visitors.
+3. Legal Compliance: Many areas have policies requiring web sites to be available.
 
 
 List available comands:
