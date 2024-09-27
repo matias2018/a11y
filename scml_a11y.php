@@ -4,7 +4,7 @@ namespace SCML\A11Y;
  * Plugin Name: WPA11Y Accessibility Tool
  * Plugin URI: https://github.com/matias2018/a11y
  * Description: This is a plugin to manage accessibility issues.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Requires at least: 5.2
  * Requires PHP:      7.2
  * Author: Pedro Matias
@@ -50,10 +50,12 @@ function initialization()
   static $initialized = false;
 
   if ($initialized) {
+    // error_log('SCML A11Y Plugin initialized successfully!');
     return;
   }
-  // error_log('SCML A11Y Plugin initialized successfully!');
   $initialized = true;
+  // error_log('$initialized = true;');
+  return;
 }
 
 // Hooking functions

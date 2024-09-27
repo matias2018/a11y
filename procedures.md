@@ -7,7 +7,7 @@ Terminal
 ```
 
 
-This command will update (v) an existing zip archive named "scml_a11y.zip" with the contents of the directory "scml_a11y/" while excluding files with the name pattern "*.DS_Store".
+This command will update an existing zip archive named "scml_a11y.zip" with the contents of the directory "scml_a11y/" while excluding files with the name pattern "*.DS_Store".
 
 ___
 zip: This is the command used to create and manipulate zip archives.

@@ -13,12 +13,10 @@ Short description of this WPA11Y Accessibility Tool
 A small WordPress plugin that enhances the accessibility your website.
 
 == Description ==
-WPA11Y Accessibility Tool is a light-weight WordPress plugin that enables you enhance the accessibility of your internet site for customers with disabilities. It implements quality practices to make certain your content material is perceivable, operable, understandable, and robust (POUR) throughout unique assistive technologies.
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-markdown parsed.
+WPA11Y Accessibility Tool enhancea accessibility of your site.
 
-Features:
+=== Features: ===
 
 1. Wider Audience: Reach a bigger target target market and make your internet site available to everyone.
 2. Enhanced User Experience: Create a greater high-quality revel in for all visitors.

@@ -5,7 +5,7 @@ function display_a11y_banner()
 {
   if (isset($_SERVER['REQUEST_URI'])) {
     $unslashed_uri = wp_unslash($_SERVER['REQUEST_URI']);
-    $current_uri = esc_url($unslashed_uri);
+    $current_uri = esc_url_raw($unslashed_uri);
     if (!is_admin() && !strstr($current_uri, 'wp-login.php')) { ?>
       <a id="openSettings" href="#" class="a11y" data-bs-toggle="modal" data-bs-target="#settings">
         <span class="sr-only">Acessibilidade</span>
@@ -99,6 +99,10 @@ function display_a11y_banner()
         </div>
       </div>
       <?php
+    }
+    else {
+      error.log('Something went wrong with the display_a11y_banner function');
+      return;
     }
   }
 }

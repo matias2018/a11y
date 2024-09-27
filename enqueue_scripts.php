@@ -12,7 +12,7 @@ function enqueue_a11y_banner_script()
     wp_enqueue_style('my-plugin-bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css');
     wp_enqueue_script('my-plugin-bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js', array('jquery'), 'version', true);
 
-    error_log('error enqueueing a11y scripts');
+    // error_log('error enqueueing a11y scripts');
     // $useDevicePreferences = get_option('use_device_preferences');
 
     // Localize the script to make the data accessible in JavaScript
