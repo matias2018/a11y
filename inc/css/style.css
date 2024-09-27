@@ -3,6 +3,10 @@
   margin-bottom: 55px;
 }
 
+.a11y-banner .a11y-message div#settings.modal.fade.show {
+	opacity: 1 !important;
+}
+
 .a11y-banner .form-switch .form-check-input {
   margin-left: -2em;
 }
